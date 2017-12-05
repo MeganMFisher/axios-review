@@ -48,7 +48,7 @@ True or False You must use double quotes when dealing with a JSON response?
 
     
     
-https://practiceapi.devmountain.com/products
+http://smurfs.com/api/smurfs
 
 What is the protocol we are using based off of the above URL?
 
@@ -89,6 +89,8 @@ Write an axios call to GET information from 'https://practiceapi.devmountain.com
 
 Write a axios call to DELETE information from 'https://practiceapi.devmountain.com/products/'. We want to delete the information for the product with the id of '27kqpvi'. Pass the id as a query on the URL. Once that data comes back return the data from the response. 
 
+
+What does .catch() do?
 
 
 What does the lifecycle method componentDidMount() do?
