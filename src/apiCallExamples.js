@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
-export default class App extends Component {
+export default class Examples extends Component {
     constructor() {
         super()
 
@@ -35,7 +35,7 @@ export default class App extends Component {
     }
 
     updateProduct() {
-        axios.put(`https://practiceapi.devmountain.com/products/${this.state.updateId}`, this.state.updatedProduct).then(res => {
+        axios.put(`https://practiceapi.devmountain.com/products/${this.state.updateId}`).then(res => {
             console.log(res.data)
         })
         //The put request is adding the updateId on state to the end of the url as a parameter. 
@@ -43,7 +43,7 @@ export default class App extends Component {
 
 
     deleteProduct() {
-        axios.delete('https://practiceapi.devmountain.com/products?id=' + this.state.deleteId).then(res => {
+        axios.delete(`https://practiceapi.devmountain.com/products?id=${this.state.deleteId}`).then(res => {
             console.log(res.data)
         })
         //The delete request is adding the deleteId on state to the end of the url as a query.
